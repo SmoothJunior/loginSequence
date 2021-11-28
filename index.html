@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password</title>
+    <style>
+        body{
+            background-color: #242424;
+            color: white;
+            font-family: bahnschrift;
+            padding: 5px;
+        }
+        .loginBox{
+            background-color: #242424;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+            padding: 30px;
+            padding-bottom: 50px;
+            display: inline-block;
+            border-radius: 35px;
+        }
+    </style>
+    <script>
+
+        function checkPassword(){
+            var password = document.getElementById("passwordBox");
+            var passwordInput = password.value;
+            if (passwordInput == "beans"){
+
+                return true;
+            }
+            alert("Access denied! Try again.");
+                return false;
+            }
+        
+    </script>
+</head>
+<body>
+<div class = "loginBox">
+    <h1>Welcome to the login page!</h1>
+    <p>Please enter the special password below.</p>
+    <p>Password: <input id="passwordBox" type="password"/></p>
+    <a href="https://www.google.com/" onclick="return checkPassword();">Click here to enter.</a>
+</div>
+</body>
+</html>
